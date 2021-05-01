@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Months{% endblock %}
+
+
+{% block extra_css%}
+   {% include 'job/css.html' %}
+{% endblock %}
+
+
+{% block content %}
+<div id="month" class="app-container">
+     {% block app %}
+     {% endblock %}
+</div>
+{% endblock %}
+
+
+{% block extra_js %}
+      {% include 'job/js.html' %}
+{% endblock %}

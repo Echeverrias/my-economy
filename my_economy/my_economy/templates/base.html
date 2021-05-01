@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="IE Scraper">
+    <meta name="author" content="JAEA">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>{% block title %}IE Scraper{% endblock %}</title>
+      {% include 'css.html' %}
+
+
+      {% block extra_css %}{% endblock %}
+  </head>
+
+
+  <body>
+
+  {% include 'nav.html' %}
+
+<main role="main" class="main">
+
+  <div class="container">
+  {% block content %} {% endblock %}
+  </div>
+</main><!-- /.container -->
+  {% include 'js.html' %}
+
+
+  {% block extra_js %}{% endblock %}
+
+
+  </body>
+</html>

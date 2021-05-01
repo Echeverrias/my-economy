@@ -1,0 +1,7 @@
+{% block app %}
+<h1>Months expenses</h1>
+
+{% for month in months %}
+    <p>{{month.name}} {{month.year}}: {{month.expenses}}</p>
+{% endfor %}
+{%  endblock %}
