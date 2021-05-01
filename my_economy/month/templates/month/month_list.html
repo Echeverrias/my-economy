@@ -1,7 +1,10 @@
+{% extends 'month/base.html' %}
 {% block app %}
 <h1>Months expenses</h1>
 
 {% for month in months %}
-    <p>{{month.name}} {{month.year}}: {{month.expenses}}</p>
+    <p><a href="{% url 'month' month.name month.year%}">{{month.name}} {{month.year}}: {{month.expenses}}</a></p>
 {% endfor %}
+
+<button><a href="{% url 'create' %}">Create a new month</a></button>
 {%  endblock %}

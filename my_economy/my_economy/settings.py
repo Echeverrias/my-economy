@@ -64,7 +64,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'month.templates'
+            os.path.join(BASE_DIR, 'my_economy/templates'),
+            os.path.join(BASE_DIR, 'month/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

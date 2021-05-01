@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block title %}Months{% endblock %}
 
-
 {% block extra_css%}
-   {% include 'job/css.html' %}
+   {% include 'month/css.html' %}
 {% endblock %}
 
 
 {% block content %}
+<p>Actual user: {{request.user}}</p>
 <div id="month" class="app-container">
      {% block app %}
      {% endblock %}
@@ -16,5 +16,5 @@
 
 
 {% block extra_js %}
-      {% include 'job/js.html' %}
+      {% include 'month/js.html' %}
 {% endblock %}

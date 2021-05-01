@@ -3,6 +3,6 @@ from .models import Month
 
 @admin.register(Month)
 class MonthAdmin(admin.ModelAdmin):
-    # display_list = []
-    filter_list = ['year']
+    # list_display = []
+    list_filter = ['year']
     search_fields = ['month', 'year']
